@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "323747732938",
+    "firebase_url": "https://gaithoukaithian.firebaseio.com",
+    "project_id": "gaithoukaithian",
+    "storage_bucket": "gaithoukaithian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323747732938:android:fdb8dd8f365078835e0333",
+        "android_client_info": {
+          "package_name": "com.rnba.gaithoukaithian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323747732938-47uglvspekv3o05thbgil8cb9tagtrtf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGqrIgdORTyWwUEjG9x1FVm3MW_aH3OtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323747732938-47uglvspekv3o05thbgil8cb9tagtrtf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

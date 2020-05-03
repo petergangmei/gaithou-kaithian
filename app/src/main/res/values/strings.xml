@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gaithou Kaithian</string>
+    <string name="acccount">Acccount</string>
+    <string name="create"><strike>Create</strike></string>
+    <string name="rupee">\u20B9</string>
+    <string name="orderConfirm">By continuing your order will be placed.</string>
+    <string-array name="brew_array">
+        <item>Cappuccino</item>
+        <item>Espresso</item>
+        <item>Mocha</item>
+        <item>Caffè Americano</item>
+        <item>Cafe Zorro</item>
+    </string-array>
+
+</resources>

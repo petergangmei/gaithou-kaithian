@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/tool">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_account_key"
+            android:id="@+id/ic_pass"
+            android:accessibilityTraversalBefore="@id/tool"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Verification"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:background="@drawable/text_field_gradient"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:hint="Email address"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:background="@drawable/text_field_gradient"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password2"
+            android:background="@drawable/text_field_gradient"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:hint="Re-Password"/>
+
+
+        <Button
+            android:id="@+id/BtnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue_gradient"
+            android:tag="Register"
+            android:text=".."
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/toggleBtn"
+            android:text="Register"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

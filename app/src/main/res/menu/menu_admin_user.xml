@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/promote"
+        android:title="Promote to Employee" />
+
+    <item android:id="@+id/depromote"
+        android:title="De-Promote" />
+
+    <item android:id="@+id/banaccount"
+        android:title="Ban account" />
+
+
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layOut"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/picture"
+                android:id="@+id/imageView"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="25"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/imageView"
+                android:text="Title"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_toEndOf="@id/imageView"
+                android:text="100.00"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On: 23/04/2020"
+                android:id="@+id/oderOn"
+                android:textSize="13sp"
+                android:textColor="@color/colorDark"
+                android:layout_below="@id/imageView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OrderID: 12145454"
+                android:id="@+id/orderId"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"
+                android:layout_below="@id/oderOn"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_more"
+                android:id="@+id/orderMenu"
+                android:layout_above="@id/status"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@id/payment"
+                android:text="In process"
+                android:textStyle="bold"
+                android:textColor="@color/coloGreen"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="COD"
+                android:layout_above="@id/paymentType"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/paymentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Payment"
+                android:layout_below="@+id/oderOn"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

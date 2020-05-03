@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_viewiew="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_viewiew:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        android:layout_margin="5dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:id="@+id/layLeft"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/layRight"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@id/layLeft"
+                android:layout_toRightOf="@id/layLeft"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Title"
+                        android:maxLines="1"
+                        android:textColor="@color/colorDark"
+                        android:id="@+id/productName"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/price"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDark"
+                            android:text="100.00"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/deliveryFee"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/colorDark"
+                            android:text="- Free Delivery"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In stock"
+                        android:id="@+id/instock"
+                        android:textColor="#049F0C"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="-"
+                    android:id="@+id/btnRemove"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:gravity="center"
+                    android:id="@+id/quantity"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:id="@+id/btnAdd"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Delete item"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/deleteItem"/>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:text="Save for later"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:id="@+id/saveLater"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
